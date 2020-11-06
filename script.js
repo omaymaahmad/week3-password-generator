@@ -1,6 +1,24 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+function generatePassword() {
+  var upperLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var lowerLetters = "abcdefghijklmnopqrstuvwxyz";
+  var numbers = "1234567890";
+  var specialChar = "!@£$%^&*";
+
+  var lengthOfRequestedPassword = prompt('What length would you like you password?')
+  var lengthRequestedNumber = parseInt(lengthOfRequestedPassword); 
+
+  if (lengthRequestedNumber < 8 || lengthRequestedNumber > 128){
+    alert('Abide by the rules: More than 8 - Less than 128');
+  }
+
+
+  return;
+}
+
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
