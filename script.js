@@ -29,7 +29,36 @@ var possiblePasswordCharacters = '';
 if(useUpperLetters === true){
   var randomUpperLetter = upperLetters[Math.floor(Math.random() * 26)];
   password += randomUpperLetter;
+
+  possiblePasswordCharacters += upperLetters;
 }
+
+if(useLowerLetters === true){
+  var randomLowerLetter = lowerLetters[Math.floor(Math.random() * 26)];
+  password += randomLowerLetter;
+
+  possiblePasswordCharacters += lowerLetters;
+}
+
+if(useNumbers === true){
+  var randomNumber = numbers[Math.floor(Math.random() * 10)];
+  password += randomNumber;
+
+  possiblePasswordCharacters += numbers;
+}
+
+if(useSpecialChar === true){
+  var randomSpecial = specialChar[Math.floor(Math.random() * 8)];
+  password += randomSpecial;
+
+  possiblePasswordCharacters += specialChar;
+}
+
+while (password.length < lengthRequestedNumber){
+  var randomCharacter = possiblePasswordCharacters[Math.floor(Math.random() * possiblePasswordCharacters.length)];
+  password += randomCharacter;
+}
+
 
   return password;
 }
