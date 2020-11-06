@@ -12,6 +12,7 @@ function generatePassword() {
 
   if (lengthRequestedNumber < 8 || lengthRequestedNumber > 128){
     alert('Abide by the rules: More than 8 - Less than 128');
+    return "Go again....you need a password";
   }
 
   var useUpperLetters = confirm('Would you like Upper Letters?')
@@ -58,7 +59,6 @@ while (password.length < lengthRequestedNumber){
   var randomCharacter = possiblePasswordCharacters[Math.floor(Math.random() * possiblePasswordCharacters.length)];
   password += randomCharacter;
 }
-
 
   return password;
 }
