@@ -19,8 +19,19 @@ var useLowerLetters = confirm('Would you like to use Lower Letters?')
 var useNumbers = confirm('Would you like to use numbers?')
 var useSpecialChar = confirm('Would you like to use Special Characters')
 
+if(useLowerLetters === false && useUpperLetters === false && useNumbers === false && useSpecialChar === false){
+  alert('You need to select something to add....')
+}
 
-  return;
+var password = ''; 
+var possiblePasswordCharacters = '';
+
+if(useUpperLetters === true){
+  var randomUpperLetter = upperLetters[Math.floor(Math.random() * 26)];
+  password += randomUpperLetter;
+}
+
+  return password;
 }
 
 
