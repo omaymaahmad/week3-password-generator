@@ -14,6 +14,11 @@ function generatePassword() {
     alert('Abide by the rules: More than 8 - Less than 128');
   }
 
+  var useUpperLetters = confirm('Would you like Upper Letters?')
+var useLowerLetters = confirm('Would you like to use Lower Letters?')
+var useNumbers = confirm('Would you like to use numbers?')
+var useSpecialChar = confirm('Would you like to use Special Characters')
+
 
   return;
 }
