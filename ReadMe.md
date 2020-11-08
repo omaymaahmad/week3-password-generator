@@ -1,4 +1,10 @@
 # 03 JavaScript: Password Generator
+* all the variables listed covering the requirements of upper case letters, lower case letters, numbers and special characters
+* prompt to ask the user how long they would like their password to be, using 'if' to generate a return if the number entered is lower than 8 or more than 128. 
+* all the questions asking user for their requirements set as a Boolean.
+* using 'if' function to display an alert if user selects 'false' for all options.
+* compilation of all the possible outcomes, incoporating the math.random function to select a random character, multiplied by the respective possiblities (26 letters, 10 numbers, 8 special characters). The math.floor function ensures that the number is rounded down.
+* screenshot of page added in 'Assets' folder. 
 
 ## Your Task
 
